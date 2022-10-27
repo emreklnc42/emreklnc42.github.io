@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                  <meta charset="UTF-8">
+                  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Document</title>
+</head>
+<body>
+   <input type="text" id="p2">
+   <input type="text" id="p3">
+
+   <button onclick="btm()" id="btp">çaliştir</button>   
+   <button onclick="btm2()" id="btp">çaliştir(çarpma)</button>   
+   <p id="p1"></p>
+  <script>
+
+    var x = 0
+    var y = 0
+    var text = "ders15"
+    var text1 = ""
+
+    function btm(){
+      x = (document.getElementById("p2").value)
+      y = (document.getElementById("p3").value)
+      console.log (text+(x+y))
+      document.getElementById("p1").innerHTML=text+(x+y)
+    }
+
+    function btm2(){
+      x = Number(document.getElementById("p2").value)
+      y = Number(document.getElementById("p3").value)
+      console.log(text1+(x*y))
+      document.getElementById("p1").innerHTML=text1+(x*y)
+
+
+    }
+  </script>
+</body>
+</html>
